@@ -1,0 +1,46 @@
+{
+  "name": "language-lang",
+  "displayName": "LANGUAGE",
+  "description": "Syntax highlighting for the LANGUAGE programming language",
+  "version": "0.5.0",
+  "publisher": "LANGUAGELang",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "LANGUAGE",
+    "language",
+    "syntax",
+    "highlighting"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/LANGUAGE-vscode-extension"
+  },
+  "icon": "icon.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "language-lang",
+        "aliases": [
+          "LANGUAGE",
+          "language-lang"
+        ],
+        "extensions": [
+          ".LANGUAGE"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "language-lang",
+        "scopeName": "source.language-lang",
+        "path": "./syntaxes/LANGUAGE.tmLanguage.json"
+      }
+    ]
+  }
+}
