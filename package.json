@@ -2,7 +2,7 @@
   "name": "LANGUAGE-Programming-Language-Extension",
   "displayName": "LANGUAGE Extension",
   "description": "Syntax highlighting for the LANGUAGE programming language",
-  "version": "0.5.1",
+  "version": "1.0.2",
   "publisher": "James6769",
   "engines": {
     "vscode": "^1.70.0"
@@ -39,7 +39,7 @@
       {
         "language": "LANGUAGE-Programming-Language",
         "scopeName": "source.LANGUAGE-Programming-Language",
-        "path": "./syntaxes/LANGUAGE.tmLanguage.json"
+        "path": "./LANGUAGE.tmLanguage.json"
       }
     ]
   }
