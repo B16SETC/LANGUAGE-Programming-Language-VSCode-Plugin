@@ -1,7 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "LANGUAGE",
-  "scopeName": "source.language-lang",
+  "scopeName": "source.LANGUAGE-Programming-Language",
+  "fileTypes": ["LANGUAGE"],
   "patterns": [
     { "include": "#comments" },
     { "include": "#strings" },
@@ -12,16 +13,12 @@
     { "include": "#functions-def" },
     { "include": "#functions-call" },
     { "include": "#numbers" },
-    { "include": "#operators" },
-    { "include": "#variables" }
+    { "include": "#operators" }
   ],
   "repository": {
     "comments": {
-      "name": "comment.line.hash.language-lang",
-      "match": "#[^#]*#?",
-      "captures": {
-        "0": { "name": "comment.line.hash.language-lang" }
-      }
+      "name": "comment.line.language-lang",
+      "match": "#[^#]*(#|$)"
     },
     "strings": {
       "name": "string.quoted.double.language-lang",
@@ -36,48 +33,40 @@
     },
     "keywords-control": {
       "name": "keyword.control.language-lang",
-      "match": "\\b(If|Elif|Else|While|For|To|End|Return)\\b"
+      "match": "(?<![a-zA-Z0-9_])(If|Elif|Else|While|For|To|End|Return)(?![a-zA-Z0-9_])"
     },
     "keywords-logical": {
-      "name": "keyword.operator.logical.language-lang",
-      "match": "\\b(And|Or|Not)\\b"
+      "name": "keyword.operator.word.language-lang",
+      "match": "(?<![a-zA-Z0-9_])(And|Or|Not)(?![a-zA-Z0-9_])"
     },
     "keywords-builtin": {
-      "name": "keyword.other.language-lang",
-      "match": "\\b(Print|Push|Pop|Length|Upper|Lower|Contains|Substring)\\b"
+      "name": "support.function.builtin.language-lang",
+      "match": "(?<![a-zA-Z0-9_])(Print|Push|Pop|Length|Upper|Lower|Contains|Substring)(?![a-zA-Z0-9_])"
     },
     "booleans": {
-      "name": "constant.language.boolean.language-lang",
-      "match": "\\b(True|False)\\b"
+      "name": "constant.language.language-lang",
+      "match": "(?<![a-zA-Z0-9_])(True|False)(?![a-zA-Z0-9_])"
     },
     "functions-def": {
-      "patterns": [
-        {
-          "match": "\\b(Func)\\s+([A-Za-z_][A-Za-z0-9_]*)\\b",
-          "captures": {
-            "1": { "name": "keyword.declaration.function.language-lang" },
-            "2": { "name": "entity.name.function.language-lang" }
-          }
-        }
-      ]
+      "match": "(?<![a-zA-Z0-9_])(Func)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+      "captures": {
+        "1": { "name": "keyword.declaration.function.language-lang" },
+        "2": { "name": "entity.name.function.language-lang" }
+      }
     },
     "functions-call": {
-      "match": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*(?=\\()",
+      "match": "([A-Za-z_][A-Za-z0-9_]*)\\s*(?=\\()",
       "captures": {
         "1": { "name": "entity.name.function.language-lang" }
       }
     },
     "numbers": {
       "name": "constant.numeric.language-lang",
-      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+      "match": "(?<![a-zA-Z_])\\b[0-9]+(\\.[0-9]+)?\\b"
     },
     "operators": {
       "name": "keyword.operator.language-lang",
-      "match": "(==|!=|<=|>=|<|>|\\+|-|\\*|/|=)"
-    },
-    "variables": {
-      "name": "variable.other.language-lang",
-      "match": "\\b[a-z_][A-Za-z0-9_]*\\b"
+      "match": "(==|!=|<=|>=|<|>|\\+|-|\\*|\\/|=)"
     }
   }
 }
