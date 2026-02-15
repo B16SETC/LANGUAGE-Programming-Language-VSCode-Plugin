@@ -1,6 +1,6 @@
 {
-  "name": "language-lang",
-  "displayName": "LANGUAGE",
+  "name": "LANGUAGE-Programming-Language-Extension",
+  "displayName": "LANGUAGE Extension",
   "description": "Syntax highlighting for the LANGUAGE programming language",
   "version": "0.5.0",
   "publisher": "James6769",
