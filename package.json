@@ -3,7 +3,7 @@
   "displayName": "LANGUAGE",
   "description": "Syntax highlighting for the LANGUAGE programming language",
   "version": "0.5.0",
-  "publisher": "LANGUAGELang",
+  "publisher": "James6769",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/LANGUAGE-vscode-extension"
+    "url": "https://github.com/B16SETC/LANGUAGE-Programming-Language-VSCode-Plugin"
   },
   "icon": "icon.png",
   "contributes": {

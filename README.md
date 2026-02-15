@@ -1,6 +1,6 @@
 # LANGUAGE VS Code Extension
 
-Syntax highlighting for the [LANGUAGE programming language](https://github.com/yourusername/LANGUAGE).
+Syntax highlighting for the [LANGUAGE programming language](https://github.com/B16SETC/LANGUAGE-Programming-Language).
 
 ## Features
 
@@ -44,8 +44,8 @@ End
 
 ## Links
 
-- [LANGUAGE Repository](https://github.com/yourusername/LANGUAGE)
-- [Report Issues](https://github.com/yourusername/LANGUAGE-vscode-extension/issues)
+- [LANGUAGE Repository](https://github.com/B16SETC/LANGUAGE-Programming-Language)
+- [Report Issues](https://github.com/B16SETC/LANGUAGE-Programming-Language-VSCode-Plugin/issues)
 
 ## License
 
